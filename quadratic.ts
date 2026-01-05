@@ -21,10 +21,6 @@ function bhaskara(coefficients: Coefficients) {
 
   if (deltaResult < 0) throw new Error("Complex roots are not supported yet.");
 
-  console.log(
-    format(fraction(-b + Math.sqrt(deltaResult), 2 * a), { fraction: "ratio" }),
-  );
-
   const isFraction = Math.sqrt(deltaResult) % (2 * a) > 0;
 
   return {
@@ -43,3 +39,4 @@ function bhaskara(coefficients: Coefficients) {
 
 console.log(bhaskara([9, 0, -1]));
 console.log(bhaskara([-1, 2, 15]));
+console.log(bhaskara([-1, 6, -9]));
