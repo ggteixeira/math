@@ -1,6 +1,6 @@
 {
   "type": "module",
   "dependencies": {
-    "mathjs": "^15.1.0"
+    "mathjs": "^15.2.0"
   }
 }
